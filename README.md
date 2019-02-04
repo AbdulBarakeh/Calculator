@@ -1,5 +1,6 @@
 ![Size](https://img.shields.io/github/languages/code-size/SWT12F19/Calculator.svg?style=flat)
 ![LastCommit](https://img.shields.io/github/last-commit/SWT12F19/Calculator.svg?style=flat)
+![Language](https://img.shields.io/github/languages/top/SWT12F19/Calculator.svg?style=flat)
 
 # Calculator
 
