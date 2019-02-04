@@ -3,24 +3,32 @@
 In this exercise the purpose is to practice the use of Git by extending the Calculator with new functionality and tests. All this is achieved by sharing the work and make changes parallel.
 
 ## Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+1. [Requirements](#requirements)
+2. [Contribution](#contribution)
+    1. [Clone](#cloning)
+    2. [Workflow](#workflow)
+3. [Tasks](#tasks)
+4. [Files](#files)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+## This is the introduction <a name="requirements"></a>
+req
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
+## Some paragraph <a name="contribution"></a>
+con
 
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
+### Sub paragraph <a name="cloning"></a>
+clo
 
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
+### Sub paragraph <a name="workflow"></a>
+work
+
+## Another paragraph <a name="tasks"></a>
+Tasks
 
 But I have to admit, tasks lists are my favorite:
 
 - [x] This is a complete item
 - [ ] This is an incomplete item
+
+## Another paragraph <a name="files"></a>
+files
