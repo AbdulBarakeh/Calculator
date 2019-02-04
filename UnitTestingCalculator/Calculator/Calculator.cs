@@ -40,5 +40,10 @@ namespace Calculator
 
             return (Accumulator = (dividend / divisor));
         }
+
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
     }
 }
