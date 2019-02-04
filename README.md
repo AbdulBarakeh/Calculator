@@ -14,11 +14,13 @@ In this exercise the purpose is to practice the use of Git by extending the Calc
 3. [Tasks](#tasks)
 4. [Files](#files)
 
-## This is the introduction <a name="requirements"></a>
-req
+## Requirements <a name="requirements"></a>
+- Git for Windows
+- Tortoise / other
+- Github Extension for Visual Studio
 
 ## Contribution <a name="contribution"></a>
-con
+
 
 ### Cloning <a name="cloning"></a>
 clo
