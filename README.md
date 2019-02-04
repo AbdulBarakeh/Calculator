@@ -31,9 +31,7 @@ Cloning with HTTP:
 
 > When two developers start working on two separate functionalities within one project, problems begin to appear. This is where branches the core feature of Git comes in handy. Branches are independent “tracks” of developing a project. For each new functionality, a new branch should be created, where the new feature is developed and tested. Once the feature is ready, the branch can be merged to the master branch so it can be released
 
-Every new feature results in a new branch. Naming convention should be ```feature/{NameOfFeature}```
-
-After pushing changes remote repository and if feature is implemented and testes, then make a pull request
+Every new feature results in a new branch. Naming convention should be ```feature/{NameOfFeature}```. After pushing changes to remote repository and if feature is implemented and testes, then make a pull request.
 
 ## Tasks <a name="tasks"></a>
 This list contains all the sub-exercises of the exercise.
