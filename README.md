@@ -43,5 +43,5 @@ This list contains all the sub-exercises of the exercise.
 
 ## Files <a name="files"></a>
 [Calculator Class](UnitTestingCalculator/Calculator/Calculator.cs)
-[Calculator Unit Test](UnitTestingCalculator/Calculator/Calculator.cs)
+[Calculator Unit Test](UnitTestingCalculator/Calculator.Test.Unit/CalculatorUnitTests.cs)
 
