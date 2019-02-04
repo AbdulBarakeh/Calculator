@@ -42,4 +42,4 @@ This list contains all the sub-exercises of the exercise.
     - [ ] Power
 
 ## Files <a name="files"></a>
-[Calculator](Calculator.cs)
+[Calculator](UnitTestingCalculator/Calculator/Calculator.cs)
