@@ -9,6 +9,8 @@
 
 In this exercise the purpose is to practice the use of Git by extending the Calculator with new functionality and tests. This is achieved by sharing the work and make changes parallel.
 
+![UMLDiagram](GitCalc.PNG)
+
 ## Table of contents
 1. [Requirements](#requirements)
 2. [Contribution](#contribution)
