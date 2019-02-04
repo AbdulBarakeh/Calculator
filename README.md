@@ -28,7 +28,8 @@ Cloning with HTTP:
 ```git clone https://github.com/SWT12F19/Calculator.git```
 
 ### Workflow <a name="workflow"></a>
-work
+
+> When two developers start working on two separate functionalities within one project, problems begin to appear. This is where branches > the core feature of Git comes in handy. Branches are independent “tracks” of developing a project. For each new functionality, a new  > branch should be created, where the new feature is developed and tested. Once the feature is ready, the branch can be merged to the > master branch so it can be released
 
 ## Tasks <a name="tasks"></a>
 This list contains all the sub-exercises of the exercise.
