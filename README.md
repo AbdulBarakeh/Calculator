@@ -1,3 +1,5 @@
+https://img.shields.io/github/languages/code-size/SWT12F19/Calculator.svg?style=flat
+
 # Calculator
 
 In this exercise the purpose is to practice the use of Git by extending the Calculator with new functionality and tests. This is achieved by sharing the work and make changes parallel.
