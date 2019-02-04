@@ -1,5 +1,7 @@
 # Calculator
 
+In this exercise the purpose is to practice the use of Git by extending the Calculator with new functionality and tests. All this is achieved by sharing the work and make changes parallel.
+
 # Table of contents
 1. [Introduction](#introduction)
 2. [Some paragraph](#paragraph1)
