@@ -20,7 +20,7 @@ In this exercise the purpose is to practice the use of Git by extending the Calc
 - Github Extension for Visual Studio
 
 ## Contribution <a name="contribution"></a>
-
+When contributing to this repository, please check the needed tasks to be done before starting. It is important to check if a branch to a certain task is already made, before making a new. Also, read how to clone this repository and when contributing please follow the workflow description.
 
 ### Cloning <a name="cloning"></a>
 clo
