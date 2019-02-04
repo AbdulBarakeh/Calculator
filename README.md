@@ -23,12 +23,17 @@ clo
 work
 
 ## Another paragraph <a name="tasks"></a>
-Tasks
+This list contains all the sub-exercises of the exercise.
 
-But I have to admit, tasks lists are my favorite:
-
-- [x] This is a complete item
-- [ ] This is an incomplete item
+- [ ] Install Git Tools
+- [ ] Team Up
+- [ ] Github Setup
+- [ ] Calculator Functionality
+    - [ ] Divide
+    - [ ] Accumulator
+    - [ ] Clear
+    - [ ] Overloading
+    - [ ] Power
 
 ## Another paragraph <a name="files"></a>
 files
