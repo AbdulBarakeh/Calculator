@@ -1,6 +1,9 @@
 ![Size](https://img.shields.io/github/languages/code-size/SWT12F19/Calculator.svg?style=flat)
 ![LastCommit](https://img.shields.io/github/last-commit/SWT12F19/Calculator.svg?style=flat)
 ![Language](https://img.shields.io/github/languages/top/SWT12F19/Calculator.svg?style=flat)
+![Issues](https://img.shields.io/github/issues-raw/SWT12F19/Calculator.svg?style=flat)
+![OpenPullReq](https://img.shields.io/github/issues-pr-raw/SWT12F19/Calculator.svg?style=flat)
+![ClosedPullReq](https://img.shields.io/github/issues-pr-closed-raw/SWT12F19/Calculator.svg?style=flat)
 
 # Calculator
 
