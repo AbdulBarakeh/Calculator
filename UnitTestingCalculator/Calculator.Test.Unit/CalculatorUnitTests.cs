@@ -64,6 +64,27 @@ namespace Calculator.Test.Unit
         }
 
 
+        [TestCase(4, 2, 2)]
+        [TestCase(4, -2, -2)]
+        [TestCase(-4, -2, 2)]
+        [TestCase(1, 2, 0.5)]
+        [TestCase(1.0, 2.0, 0.5)]
+        [TestCase(-1.5, 2.0, -0.75)]
+        public void Divide_DivideNumbers_ResultIsCorrect(double a, double b, double result)
+        {
+            Assert.That(_uut.Divide(a, b), Is.EqualTo(result));
+        }
+
+
+        //Divide By Zero does not throw exception in C# but results in positive/negative Infinity or NaN 
+        // https://docs.microsoft.com/en-us/dotnet/api/system.dividebyzeroexception?view=netframework-4.7.2
+
+        [TestCase(1.5, 0)]
+        public void Divide_DivideByZero_ThrowsDivideByZeroException(double a, double b)
+        {
+            Assert.That(() => _uut.Divide(a, b), Throws.TypeOf<DivideByZeroException>());
+        }
+
         [TestCase(2, 3, 8)]
         [TestCase(2, -3, 0.125)]
         [TestCase(-2, -3, -0.125)]
