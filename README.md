@@ -1,4 +1,4 @@
-![https://img.shields.io/github/languages/code-size/SWT12F19/Calculator.svg?style=flat]
+![Size](https://img.shields.io/github/languages/code-size/SWT12F19/Calculator.svg?style=flat)
 
 # Calculator
 
