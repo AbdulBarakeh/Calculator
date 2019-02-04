@@ -13,16 +13,16 @@ In this exercise the purpose is to practice the use of Git by extending the Calc
 ## This is the introduction <a name="requirements"></a>
 req
 
-## Some paragraph <a name="contribution"></a>
+## Contribution <a name="contribution"></a>
 con
 
-### Sub paragraph <a name="cloning"></a>
+### Cloning <a name="cloning"></a>
 clo
 
-### Sub paragraph <a name="workflow"></a>
+### Workflow <a name="workflow"></a>
 work
 
-## Another paragraph <a name="tasks"></a>
+## Tasks <a name="tasks"></a>
 This list contains all the sub-exercises of the exercise.
 
 - [ ] Install Git Tools
@@ -35,5 +35,5 @@ This list contains all the sub-exercises of the exercise.
     - [ ] Overloading
     - [ ] Power
 
-## Another paragraph <a name="files"></a>
+## Files <a name="files"></a>
 files
