@@ -23,10 +23,10 @@ namespace Calculator.Test.Unit
         public void Add_Add2And3_ResultIs5()
         {
             // Act
-            var result = _uut.Add(2, 3);
+            var result = _uut.Add(4, 3);
 
             // Assert
-            Assert.That(result, Is.EqualTo(5));
+            Assert.That(result, Is.EqualTo(7));
         }
 
         // The TestCase feature allows reusing test code for diffent input and expected output
