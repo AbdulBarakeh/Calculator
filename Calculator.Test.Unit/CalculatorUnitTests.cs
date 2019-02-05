@@ -109,5 +109,12 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(0.707107).Within(0.0000005));
         }
 
+        [Test]
+
+        public void Power_5_ToThePowerOf_5_Result_3125()
+        {
+            Assert.That(_uut.Power(5),Is.EqualTo(3125));
+        }
+
     }
 }
