@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace Calculator.Test.Unit
 {
     [TestFixture]
-    [Author("Tortoise Jensen")]
+    [Author("GRUPPE 12")]
     public class CalculatorUnitTests
     {
         private Calculator _uut;
