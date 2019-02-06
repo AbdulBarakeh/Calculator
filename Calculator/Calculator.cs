@@ -49,7 +49,7 @@ namespace Calculator
 
         public double Power(double a)
         {
-            return Accumulator = Math.Pow(Accumulator, a);
+            return Accumulator = Math.Pow(a, a);
         }
 
         public double Divide(double dividend, double divisor)
