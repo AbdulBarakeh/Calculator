@@ -18,6 +18,17 @@ namespace Calculator.Test.Unit
             _uut = new Calculator();
         }
 
+        [Test]
+        public void Add_AddParamAndAccumulator_ResultIsCorrect()
+        { 
+            _uut.Add(2, 2);
+
+            var result = _uut.Add(4);
+            
+            Assert.That(result, Is.EqualTo(8));
+        }
+
+
         // A single test case, with fixed input and expected output
         [Test]
         public void Add_Add2And3_ResultIs5()
