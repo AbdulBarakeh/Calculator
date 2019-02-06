@@ -116,5 +116,25 @@ namespace Calculator.Test.Unit
             Assert.That(_uut.Power(5),Is.EqualTo(3125));
         }
 
+        [Test]
+        public void Testing_Accumulator_Clear()
+        {
+            _uut.Add(5, 5);
+
+            _uut.Clear();
+
+            Assert.That(_uut.Accumulator, Is.EqualTo(0));
+        
+        }
+
+        [Test]
+        public void SingleArgument_Multiplier()
+        {
+            _uut.Multiply(5, 5);
+
+            var result = _uut.Multiply(2);
+
+            Assert.That(result, Is.EqualTo(50));
+        }
     }
 }
