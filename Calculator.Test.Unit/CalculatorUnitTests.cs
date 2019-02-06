@@ -62,6 +62,10 @@ namespace Calculator.Test.Unit
         public void Divide_DivideParamAndAccumulator_ResultIsCorrect()
         {
             _uut.Divide(4, 2);
+
+            var result = _uut.Divide(2);
+
+            Assert.That(result, Is.EqualTo(1));
         }
 
         // A single test case, with fixed input and expected output
