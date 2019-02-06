@@ -14,7 +14,7 @@ namespace Calculator
 
         public double Add(double a, double b)
         {
-            return (Accumulator =  a + b);
+            return (Accumulator = a + b);
         }
 
         public double Add(double a)
@@ -54,7 +54,7 @@ namespace Calculator
 
         public double Divide(double dividend, double divisor)
         {
-            if(divisor == 0)
+            if (divisor == 0)
             {
                 throw new DivideByZeroException();
             }
@@ -72,14 +72,25 @@ namespace Calculator
             return Accumulator /= divisor;
         }
 
+        public double Modulus(int a, int b)
+        {
+            return (double) (Accumulator = (a % b));
+        }
+
+        public double Modulus(int a)
+        {
+            return (double) (Accumulator %= a);
+        }
+
         public double SquareRoot(double a)
         {
             return (Accumulator = Math.Sqrt(a));
         }
-        
+
         public double SquareRoot()
         {
             return Math.Sqrt(Accumulator);
+
         }
 
         public void Clear()
@@ -87,4 +98,4 @@ namespace Calculator
             Accumulator = 0;
         }
     }
-   }
+}

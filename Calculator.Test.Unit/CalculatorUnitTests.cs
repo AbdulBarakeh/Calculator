@@ -122,5 +122,27 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Power(5),Is.EqualTo(3125));
         }
+
+        [TestCase(5, 2, 1)]
+        [TestCase(8, 3, 2)]
+        [TestCase(10, 5, 0)]
+        [TestCase(15, 2, 1)]
+        [TestCase(10, 1, 0)]
+        [TestCase(7, 5, 2)]
+        [TestCase(9, 3, 0)]
+        public void Modulus_ModuluToIntegers_ResultIsCorrect(int a, int b, int result)
+        {
+            Assert.That(_uut.Modulus(a, b), Is.EqualTo(result));
+        }
+
+        [TestCase(10, 6, 2, 0)]
+        [TestCase(10, 6, 3, 1)]
+        [TestCase(15, 8, 4, 3)]
+        public void Modulus_ModulusAccOneIntegers_ResultIsCorrect(int a, int b, int c, int result)
+        {
+            _uut.Modulus(a, b);
+            
+            Assert.That(_uut.Modulus(c), Is.EqualTo(result));
+        }
     }
 }
