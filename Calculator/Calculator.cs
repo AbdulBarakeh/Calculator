@@ -72,6 +72,16 @@ namespace Calculator
             return Accumulator /= divisor;
         }
 
+        public double Modulus(int a, int b)
+        {
+            return(double) (Accumulator = (a % b));
+        }
+
+        public double Modulus(int a)
+        {
+            return(double) (Accumulator %= a);
+        }
+
         public void Clear()
         {
             Accumulator = 0;
