@@ -74,7 +74,12 @@ namespace Calculator
 
         public double SquareRoot(double a)
         {
-            return Math.sqrt(a);
+            return (Accumulator = Math.sqrt(a));
+        }
+
+        public double SquareRoot()
+        {
+            return Math.sqrt(Accumulator);
         }
 
         public void Clear()
