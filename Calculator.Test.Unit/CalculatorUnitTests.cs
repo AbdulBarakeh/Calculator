@@ -11,7 +11,6 @@ namespace Calculator.Test.Unit
     {
         private Calculator _uut;
 
-        // Using the SetUp feature, saves coding (part of) the Arrange step
         [SetUp]
         public void Setup()
         {
@@ -26,6 +25,16 @@ namespace Calculator.Test.Unit
             var result = _uut.Add(4);
             
             Assert.That(result, Is.EqualTo(8));
+        }
+
+        [Test]
+        public void Subtract_SubtractParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Subtract(8, 4);
+
+            var result = _uut.Subtract(2);
+
+            Assert.That(result, Is.EqualTo(2));
         }
 
 
