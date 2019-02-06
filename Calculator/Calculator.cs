@@ -72,6 +72,11 @@ namespace Calculator
             return Accumulator /= divisor;
         }
 
+        public double SquareRoot(double a)
+        {
+            return Math.sqrt(a);
+        }
+
         public void Clear()
         {
             Accumulator = 0;
