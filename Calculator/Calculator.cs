@@ -72,9 +72,19 @@ namespace Calculator
             return Accumulator /= divisor;
         }
 
+        public double SquareRoot(double a)
+        {
+            return (Accumulator = Math.Sqrt(a));
+        }
+        
+        public double SquareRoot()
+        {
+            return Math.Sqrt(Accumulator);
+        }
+
         public void Clear()
         {
             Accumulator = 0;
         }
     }
-}
+   }

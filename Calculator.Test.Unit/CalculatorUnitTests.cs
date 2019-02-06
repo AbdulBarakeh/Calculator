@@ -110,11 +110,17 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
-
+        [TestCase(144, 12)]
+        [TestCase(25, 5)]
+        [TestCase(36, 6)]
+        public void Square_Root_ResultIsCorrect(double a, double result)
+        {
+            Assert.That(_uut.SquareRoot(a), Is.EqualTo(result));
+        }
+      
         public void Power_5_ToThePowerOf_5_Result_3125()
         {
             Assert.That(_uut.Power(5),Is.EqualTo(3125));
         }
-
     }
 }
