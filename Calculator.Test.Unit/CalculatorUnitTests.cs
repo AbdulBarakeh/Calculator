@@ -109,5 +109,13 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(0.707107).Within(0.0000005));
         }
 
+        [Test]
+        [TestCase(144, 12)]
+        [TestCase(25, 5)]
+        [TestCase(36, 6)]
+        public void Square_Root_ResultIsCorrect(double a, double result)
+        {
+            Assert.That(_uut.SquareRoot(a), Is.EqualTo(result));
+        }
     }
 }

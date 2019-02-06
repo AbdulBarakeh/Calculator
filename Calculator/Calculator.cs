@@ -74,12 +74,12 @@ namespace Calculator
 
         public double SquareRoot(double a)
         {
-            return (Accumulator = Math.sqrt(a));
+            return (Accumulator = Math.Sqrt(a));
         }
-
+        
         public double SquareRoot()
         {
-            return Math.sqrt(Accumulator);
+            return Math.Sqrt(Accumulator);
         }
 
         public void Clear()
@@ -87,4 +87,4 @@ namespace Calculator
             Accumulator = 0;
         }
     }
-}
+   }
