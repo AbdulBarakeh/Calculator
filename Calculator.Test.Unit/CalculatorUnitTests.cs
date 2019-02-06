@@ -37,9 +37,32 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(2));
         }
 
+        [Test]
+        public void Multiply_MultiplyParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Multiply(2, 2);
+
+            var result = _uut.Multiply(4);
+
+            Assert.That(result, Is.EqualTo(16));
+        }
 
         [Test]
-        public void 
+        public void Power_ParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Power(2, 2);
+
+            var result = _uut.Power(4);
+
+            Assert.That(result, Is.EqualTo(256));
+
+        }
+
+        [Test]
+        public void Divide_DivideParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Divide(4, 2);
+        }
 
         // A single test case, with fixed input and expected output
         [Test]
