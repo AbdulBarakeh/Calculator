@@ -38,6 +38,9 @@ namespace Calculator.Test.Unit
         }
 
 
+        [Test]
+        public void 
+
         // A single test case, with fixed input and expected output
         [Test]
         public void Add_Add2And3_ResultIs5()
@@ -130,10 +133,13 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
-
         public void Power_5_ToThePowerOf_5_Result_3125()
         {
-            Assert.That(_uut.Power(5),Is.EqualTo(3125));
+            _uut.Add(2, 3);
+
+            var result = _uut.Power(5);
+
+            Assert.That(result, Is.EqualTo(3125));
         }
 
     }
