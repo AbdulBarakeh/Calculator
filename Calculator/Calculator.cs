@@ -24,7 +24,7 @@ namespace Calculator
 
         public double Subtract(double a, double b)
         {
-            return (a - b);
+            return (Accumulator = (a - b));
         }
 
         public double Subtract(double a)
@@ -49,7 +49,7 @@ namespace Calculator
 
         public double Power(double a)
         {
-            return Accumulator = Math.Pow(a, a);
+            return Accumulator = Math.Pow(Accumulator, a);
         }
 
         public double Divide(double dividend, double divisor)

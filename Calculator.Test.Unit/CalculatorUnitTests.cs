@@ -6,16 +6,66 @@ using NUnit.Framework;
 namespace Calculator.Test.Unit
 {
     [TestFixture]
-    [Author("Tortoise Jensen")]
+    [Author("GRUPPE 12")]
     public class CalculatorUnitTests
     {
         private Calculator _uut;
 
-        // Using the SetUp feature, saves coding (part of) the Arrange step
         [SetUp]
         public void Setup()
         {
             _uut = new Calculator();
+        }
+
+        [Test]
+        public void Add_AddParamAndAccumulator_ResultIsCorrect()
+        { 
+            _uut.Add(2, 2);
+
+            var result = _uut.Add(4);
+            
+            Assert.That(result, Is.EqualTo(8));
+        }
+
+        [Test]
+        public void Subtract_SubtractParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Subtract(8, 4);
+
+            var result = _uut.Subtract(2);
+
+            Assert.That(result, Is.EqualTo(2));
+        }
+
+        [Test]
+        public void Multiply_MultiplyParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Multiply(2, 2);
+
+            var result = _uut.Multiply(4);
+
+            Assert.That(result, Is.EqualTo(16));
+        }
+
+        [Test]
+        public void Power_ParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Power(2, 2);
+
+            var result = _uut.Power(4);
+
+            Assert.That(result, Is.EqualTo(256));
+
+        }
+
+        [Test]
+        public void Divide_DivideParamAndAccumulator_ResultIsCorrect()
+        {
+            _uut.Divide(4, 2);
+
+            var result = _uut.Divide(2);
+
+            Assert.That(result, Is.EqualTo(1));
         }
 
         // A single test case, with fixed input and expected output
@@ -110,6 +160,7 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+
         [TestCase(144, 12)]
         [TestCase(25, 5)]
         [TestCase(36, 6)]
@@ -118,9 +169,14 @@ namespace Calculator.Test.Unit
             Assert.That(_uut.SquareRoot(a), Is.EqualTo(result));
         }
       
+
         public void Power_5_ToThePowerOf_5_Result_3125()
         {
-            Assert.That(_uut.Power(5),Is.EqualTo(3125));
+            _uut.Add(2, 3);
+
+            var result = _uut.Power(5);
+
+            Assert.That(result, Is.EqualTo(3125));
         }
 
         [Test]
