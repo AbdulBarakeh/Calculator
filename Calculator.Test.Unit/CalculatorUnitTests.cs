@@ -200,6 +200,18 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(50));
         }
 
+        [TestCase(2, 4)]
+        [TestCase(5, 25)]
+        [TestCase(7, 49)]
+        [TestCase(6, 36)]
+        [TestCase(10, 100)]
+        public void SingleArg_Multiplier_ExtTest(double a, double result)
+        {
+            _uut.Multiply(1, a);
+
+            Assert.That(_uut.Multiply(a), Is.EqualTo(result));
+        }
+
         [TestCase(5, 2, 1)]
         [TestCase(8, 3, 2)]
         [TestCase(10, 5, 0)]
