@@ -48,8 +48,8 @@ This list contains all the sub-exercises of the exercise.
     - [X] Divide
     - [X] Accumulator
     - [X] Clear
-    - [ ] Overloading
-    - [ ] Power
+    - [X] Overloading
+    - [X] Power
 
 ## Files <a name="files"></a>
 - [Calculator Class](Calculator/Calculator.cs)

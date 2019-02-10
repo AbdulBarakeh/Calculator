@@ -160,6 +160,16 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+
+        [TestCase(144, 12)]
+        [TestCase(25, 5)]
+        [TestCase(36, 6)]
+        public void Square_Root_ResultIsCorrect(double a, double result)
+        {
+            Assert.That(_uut.SquareRoot(a), Is.EqualTo(result));
+        }
+      
+
         public void Power_5_ToThePowerOf_5_Result_3125()
         {
             _uut.Add(2, 3);
@@ -169,5 +179,48 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(3125));
         }
 
+        [Test]
+        public void Testing_Accumulator_Clear()
+        {
+            _uut.Add(5, 5);
+
+            _uut.Clear();
+
+            Assert.That(_uut.Accumulator, Is.EqualTo(0));
+        
+        }
+
+        [Test]
+        public void SingleArgument_Multiplier()
+        {
+            _uut.Multiply(5, 5);
+
+            var result = _uut.Multiply(2);
+
+            Assert.That(result, Is.EqualTo(50));
+        }
+
+        [TestCase(5, 2, 1)]
+        [TestCase(8, 3, 2)]
+        [TestCase(10, 5, 0)]
+        [TestCase(15, 2, 1)]
+        [TestCase(10, 1, 0)]
+        [TestCase(7, 5, 2)]
+        [TestCase(9, 3, 0)]
+        public void Modulus_ModuluToIntegers_ResultIsCorrect(int a, int b, int result)
+        {
+            Assert.That(_uut.Modulus(a, b), Is.EqualTo(result));
+        }
+
+        [TestCase(10, 6, 2, 0)]
+        [TestCase(10, 6, 3, 1)]
+        [TestCase(15, 8, 4, 3)]
+        public void Modulus_ModulusAccOneIntegers_ResultIsCorrect(int a, int b, int c, int result)
+        {
+            _uut.Modulus(a, b);
+            
+            Assert.That(_uut.Modulus(c), Is.EqualTo(result));
+
+        }
     }
 }
